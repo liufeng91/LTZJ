@@ -1,0 +1,47 @@
+zb/echannel/zb_T2000116.tcl
+/opt/crm_app/crmqa/etc/zb/echannel
+
+可以关联查询
+testcrm2 =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 134.128.40.19)(PORT = 1525))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = testcrm)
+    )
+ )
+
+
+账号：qafjtest
+密码：life_opport
+
+
+账务测试库tns
+testzw =                       
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 130.38.27.40)(PORT = 1529))
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = testzw)
+    )
+  )
+
+用户名：newzw
+密码：dfbyzlb
+
+基本库
+test_crm =                       
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 130.38.27.40)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = testcrm)
+    )
+  )
+用户名：lill
+密码：Zyjhcx_2018
